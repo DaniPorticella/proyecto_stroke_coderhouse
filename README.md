@@ -1,45 +1,70 @@
-# Proyecto – Data Science (CoderHouse)
+Proyecto Final – Data Science (CoderHouse): Predicción de ACV
 
-Este repositorio contiene las entregas correspondientes al **proyecto final** de la carrera de Data Science de [CoderHouse](https://www.coderhouse.com/ar).  
-El objetivo es aplicar técnicas de análisis de datos, visualización y modelado sobre un dataset elegido, siguiendo las consignas de cada etapa.
+Este repositorio contiene el proyecto final de la carrera de Data Science de CoderHouse, desarrollado de manera progresiva a lo largo de dos entregas.
+El objetivo es aplicar técnicas de análisis de datos, visualización y modelado predictivo sobre un dataset clínico, siguiendo un flujo completo de Data Science desde la exploración hasta la evaluación del modelo.
 
----
+📂 Contenido
+🩺 ProyectoParteIII_Porticella.ipynb
 
-## 📂 Contenido
+Notebook único que integra las tres etapas del proyecto:
 
-- **ProyectoDSParteI_Porticella.ipynb**  
-  Primera entrega:  
-  - Abstract (272 palabras).  
-  - Planteo de preguntas e hipótesis.  
-  - Análisis exploratorio inicial del dataset.  
-  - Identificación de valores faltantes.  
-  - Visualizaciones univariadas, bivariadas y multivariadas con interpretaciones.  
+Abstracts de ambas entregas (análisis exploratorio y modelado predictivo)
 
----
+Planteo de preguntas e hipótesis
 
-## 📊 Dataset
+Análisis exploratorio inicial del dataset
 
-Se utiliza el **Stroke Prediction Dataset** obtenido de Kaggle (https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset), que reúne información clínica y demográfica de 5110 individuos.  
-Incluye variables sociodemográficas (edad, género, estado civil, tipo de trabajo, tipo de residencia), factores de riesgo clínicos (hipertensión, enfermedad cardíaca, índice de masa corporal, glucemia) y hábitos (tabaquismo).  
-La variable objetivo es **stroke** (indica si el paciente presentó o no un accidente cerebrovascular).
+Identificación y tratamiento de valores faltantes
 
----
+Creación de variables derivadas (obesidad, hiperglucemia, edad ≥60 años)
 
-## 🚀 Objetivo del proyecto
+Visualizaciones univariadas, bivariadas y multivariadas con interpretaciones
 
-Explorar los factores asociados al riesgo de accidente cerebrovascular (ACV), identificar patrones relevantes y sentar las bases para el desarrollo de futuros modelos predictivos que contribuyan a la prevención y a la toma de decisiones en salud.
+Construcción de un pipeline completo con preprocesamiento, selección de características (SelectKBest) y modelo de Regresión Logística
 
----
+Optimización de hiperparámetros (k y C) mediante GridSearchCV
 
-## 🛠️ Tecnologías
+Evaluación final del modelo con métricas:
 
-- Python 3  
-- Pandas, Numpy  
-- Matplotlib, Seaborn  
-- Jupyter Notebook / Google Colab  
+ROC-AUC: 0.84
 
----
+Recall: 0.82
 
-## ✨ Autoría
+Precision: 0.14
 
-Proyecto realizado por **Daniela Porticella** como parte de la carrera de Data Science en CoderHouse (Comisión 77695, 2025).
+📊 Dataset
+
+Stroke Prediction Dataset – Kaggle
+🔗 https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+
+Dataset con información clínica y demográfica de 5110 individuos, incluyendo:
+
+Variables sociodemográficas: edad, género, estado civil, tipo de trabajo, tipo de residencia
+
+Factores clínicos: hipertensión, enfermedad cardíaca, IMC, glucemia
+
+Hábitos: tabaquismo
+
+Variable objetivo: stroke (indica si el paciente presentó o no un accidente cerebrovascular).
+
+🚀 Objetivo del proyecto
+
+Explorar los factores asociados al riesgo de accidente cerebrovascular (ACV), identificar patrones relevantes y construir un modelo predictivo supervisado que permita estimar la probabilidad de ACV.
+El enfoque prioriza la sensibilidad (recall), buscando minimizar los falsos negativos, ya que en contextos clínicos resulta más relevante detectar posibles casos de riesgo, aunque se generen falsos positivos.
+
+🛠️ Tecnologías utilizadas
+
+Python 3
+
+Pandas, NumPy
+
+Matplotlib, Seaborn
+
+Scikit-learn
+
+Jupyter Notebook / Google Colab
+
+✨ Autoría
+
+Proyecto realizado por Daniela Porticella
+Carrera de Data Science – CoderHouse (Comisión 77695, 2025)
